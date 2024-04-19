@@ -166,6 +166,7 @@
 
 .profilePage__themeWrapper {
     width: 100%;
+    margin-top: -20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -227,18 +228,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .profilePage__avatarImage {
-    width: 150px;
-    object-fit: cover;
+    width: 170px;
 }
 
 .profilePage__saveSettingBtn {
-    padding: 10px 30px;
-    font-size: 15px;
-    font-weight: 400;
-    border-radius: 30px;
     transition: var(--default-transition);
     cursor: pointer;
 }

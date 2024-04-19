@@ -101,7 +101,7 @@
     content: "";
     display: block;
     width: 24px;
-    height: 24px;
+    aspect-ratio: 1;
     border-radius: 50%;
     border: 5px solid var(--app-primary-color);
     position: absolute;

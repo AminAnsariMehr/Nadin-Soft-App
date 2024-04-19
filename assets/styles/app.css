@@ -10,7 +10,6 @@
 
 .container {
     width: 100%;
-    /* max-width: 1536px; */
     height: 100vh;
     background: var(--app-bg);
     font-family: Poppins;

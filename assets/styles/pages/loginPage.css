@@ -22,10 +22,10 @@
     background: var(--frame-bg);
     border-radius: var(--frame-border-radius);
     box-shadow: var(--frame-shadow-color);
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;
     align-items: center;
 }
 

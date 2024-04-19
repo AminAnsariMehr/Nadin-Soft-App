@@ -40,7 +40,6 @@
     position: relative;
     width: 420px;
     aspect-ratio: 1;
-    background-color: #031321;
     background: var(--clock-bg);
     border-radius: 50%;
     display: flex;
@@ -170,7 +169,6 @@
 .digitalClock {
     display: flex;
     padding: 10px 20px;
-    background-color: #031321;
     background: var(--clock-bg);
     font-size: 2rem;
     font-weight: 600;
@@ -233,8 +231,8 @@
 
 .dashboardPage__currentDate,
 .dashboardPage__message {
-    font-size: 30px;
     color: #4c4cdb;
+    font-size: 30px;
     user-select: none;
 }
 

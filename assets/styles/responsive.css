@@ -1,0 +1,119 @@
+@media (min-width:1536px) and (max-width: 1920px) {
+    .menu {
+        width: 20%;
+    }
+
+    .menuItem {
+        padding: 8px;
+        gap: 1rem;
+    }
+
+    .menuItem__icon {
+        font-size: 2rem;
+    }
+
+    .menuItem__title {
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+    }
+
+    .dashboardPage,
+    .todoPage,
+    .weatherPage,
+    .profilePage {
+        width: 80%
+    }
+
+    .dashboardApp {
+        gap: 1.5rem;
+    }
+
+    .analogClock {
+        width: 450px
+    }
+
+    .clock__number {
+        inset: 20px;
+    }
+
+    .dashboardPage__message {
+        font-size: 2.5rem;
+    }
+
+    .dashboardPage__currentDate {
+        font-size: 1.5rem;
+    }
+
+    .todoListWrapper__header,
+    .doneListWrapper__header {
+        font-size: 1.25rem;
+    }
+
+    .todoList,
+    .doneList {
+        max-height: 450px;
+    }
+
+    .todoList__todoCheckIcon,
+    .todoList__todoEditIcon,
+    .todoList__todoDeleteIcon,
+    .taskInputWrapper__btn,
+    .doneList__restoreIcon,
+    .doneList__deleteIcon {
+        font-size: 20px;
+    }
+
+    .weatherApp__weatherData {
+        width: 45%;
+    }
+
+    .profilePage__renameLabel,
+    .profilePage__avatarLabel,
+    .profilePage__themeTitle {
+        font-size: 1.5rem;
+    }
+
+    .profilePage__avatarImageQuestion {
+        font-size: 1.25rem;
+    }
+
+    .profilePage__avatarUrlLabel {
+        bottom: 30px;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
