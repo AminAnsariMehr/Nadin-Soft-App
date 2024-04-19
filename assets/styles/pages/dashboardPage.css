@@ -21,8 +21,148 @@
     gap: 1.5rem;
 }
 
+/*------------------ Digital Clock ------------------*/
+.clocks {
+    position: relative;
+    background: transparent;
+    border-radius: 20px;
+    border-top-left-radius: 225px;
+    border-top-right-radius: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
+.analogClock {
+    position: relative;
+    width: 450px;
+    min-height: 450px;
+    background-color: #031321;
+    background: var(--clock-bg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
 
+.analogClock::before {
+    position: absolute;
+    content: " ";
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.clock__number {
+    position: absolute;
+    inset: 20px;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+}
+
+.clock__number--bold {
+    color: var(--clock-number-color);
+    font-size: 2rem;
+    opacity: 1;
+    font-weight: 600;
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--i)));
+}
+
+.clock__circles {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #2195f331;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.clock__secondCircle {
+    width: 300px;
+    height: 300px;
+    z-index: 10;
+    transition: all linear 0.3s;
+}
+
+.clock__minuteCircle {
+    width: 240px;
+    height: 240px;
+    transition: all linear 0.3s;
+}
+
+.clock__hourCircle {
+    width: 180px;
+    height: 180px;
+    transition: all linear 0.3s;
+}
+
+.clock__Indicators {
+    position: absolute;
+    width: 6px;
+    height: 50%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    opacity: 0.75;
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+}
+
+.clock__secondIndicator {
+    width: 2px;
+    background-color: #04fc43;
+    transition: 0.3s all linear;
+}
+
+.clock__minuteIndicator {
+    background-color: #fee800;
+    transition: 0.3s all linear;
+    z-index: 9;
+}
+
+.clock__hourIndicator {
+    background-color: #ff2972;
+    transition: 0.3s all linear;
+    z-index: 8;
+}
+
+.clock__circles::before {
+    position: absolute;
+    content: " ";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s all linear;
+}
+
+.clock__secondCircle::before {
+    background-color: #04fc43;
+    box-shadow: 0 0 20px #04fc43,
+        0 0 60px #04fc43;
+    transition: 0.3s all linear;
+}
+
+.clock__minuteCircle::before {
+    background-color: #fee800;
+    box-shadow: 0 0 20px #fee800,
+        0 0 60px #fee800;
+}
+
+.clock__hourCircle::before {
+    background-color: #ff2972;
+    box-shadow: 0 0 20px #ff2972,
+        0 0 60px #ff2972;
+}
 
 /*------------------ Digital Clock ------------------*/
 .digitalClock {
@@ -86,4 +226,16 @@
     50% {
         opacity: 0;
     }
+}
+
+.dashboardPage__currentDate,
+.dashboardPage__message {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    color: #00ddff;
+    color: #4c4cdb;
+}
+
+.dashboardPage__currentDate {
+    font-size: 1.5rem;
 }
