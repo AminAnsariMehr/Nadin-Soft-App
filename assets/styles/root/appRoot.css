@@ -11,9 +11,15 @@
 /* ------------------  Light Mode ------------------ */
 :root[data-theme="light"] {
     --app-bg: #e9eaf2;
+    --frame-bg: #d9d9d95c;
+    --menuItem-hover-bg: #F1F2F7;
     --app-primary-color: #5157eb;
     --app-secondary-color: #00ddff;
     --clock-bg: #160f29;
     --clock-number-color: #00ddff;
-    --menuItem-hover-bg: #F1F2F7;
+    --slider-clock-bg: #00ddffca;
+    --weather-icons-color: #4c4ddb;
+    --weather-city-color: #3a3c8f;
+    --weather-data-bg: #e9e7ff;
+    --weather-Date-color: #8986ef;
 }

@@ -1,0 +1,174 @@
+.weatherPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherApp {
+    width: var(--frame-with-size);
+    height: var(--frame-height-size);
+    padding: var(--frame-padding-size);
+    background: var(--frame-bg);
+    border-radius: var(--frame-border-radius);
+    box-shadow: var(--frame-shadow-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.weatherApp__searchBoxWrapper {
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weatherApp__searchIcon {
+    color: var(--app-primary-color);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(1rem, -50%);
+}
+
+.weatherApp__searchCityInput {
+    width: 80%;
+    padding: 14px 50px;
+    font-size: 1.25rem;
+    background: transparent;
+    box-shadow: var(--frame-shadow-color);
+    border-radius: 1rem;
+}
+
+.weatherApp__searchCityBtn {
+    padding: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.weatherApp__locationData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.weatherApp__dateData {
+    width: 208px;
+    height: 30px;
+    color: var(--weather-Date-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.weatherApp__cityName,
+.weatherApp__locationIcon {
+    color: var(--weather-city-color);
+    font-size: 3rem;
+    font-family: 500;
+    text-transform: capitalize;
+}
+
+.weatherApp__statusIndicator {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherApp__currentTempWrapper {
+    position: relative;
+}
+
+.weatherApp__currentTempNumber {
+    color: var(--app-primary-color);
+    font-size: 8rem;
+    position: relative;
+}
+
+.weatherApp__currentTempNumber::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 5px solid var(--app-primary-color);
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.weatherApp__tempStatusImage {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(4px, -6px);
+}
+
+.weatherApp__weatherData {
+    width: 45%;
+    border-radius: 50px;
+    background: var(--weather-data-bg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.23);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.weatherApp__windDirectionData,
+.weatherApp__dailyData,
+.weatherApp__windSpeedData {
+    padding: 10px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.weatherApp__dailyIcon,
+.weatherApp__windSpeedIcon,
+.weatherApp__windDirectionIcon {
+    font-size: 2rem;
+    color: var(--weather-icons-color);
+}
+
+.weatherApp__windDirectionNumber,
+.weatherApp__windDirectionUnit,
+.weatherApp__dailyStatus,
+.weatherApp__windSpeedNumber,
+.weatherApp__windSpeedUnit {
+    color: var(--weather-icons-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.weatherApp__windDirectionTitle,
+.weatherApp__dailyTitle,
+.weatherApp__windSpeedTitle {
+    color: var(--weather-icons-color);
+    font-size: 12px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.weatherApp__dailyDisplay,
+.weatherApp__windSpeedDisplay,
+.weatherApp__windDirectionDisplay {
+    display: flex;
+    gap: 3px;
+}
