@@ -7,3 +7,10 @@
     --frame-border-radius: 2.5rem;
     --default-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
+/* ------------------  Light Mode ------------------ */
+:root[data-theme="light"] {
+    --app-bg: #e9eaf2;
+    --app-primary-color: #5157eb;
+    --app-secondary-color: #00ddff;
+}
