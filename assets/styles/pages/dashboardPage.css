@@ -33,6 +33,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    user-select: none;
 }
 
 .analogClock {
@@ -63,6 +64,7 @@
 }
 
 .clock__number {
+    color: var(--clock-number-color);
     position: absolute;
     inset: 12px;
     text-align: center;
@@ -70,12 +72,12 @@
 }
 
 .clock__number--bold {
-    color: var(--clock-number-color);
     font-size: 2rem;
     opacity: 1;
     font-weight: 600;
     display: inline-block;
     transform: rotate(calc(-30deg * var(--i)));
+    user-select: none;
 }
 
 .clock__circles {
@@ -182,8 +184,9 @@
 .digitalClock__parameter {
     position: relative;
     width: 60px;
-    text-align: center;
     font-weight: 500;
+    text-align: center;
+    user-select: none;
 }
 
 .digitalClock__hours {
@@ -207,11 +210,11 @@
 }
 
 .digitalClock__AmPm {
+    color: #2196f3;
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #2196f3;
 }
 
 .digitalClock__minutes::after {
@@ -232,6 +235,7 @@
 .dashboardPage__message {
     font-size: 30px;
     color: #4c4cdb;
+    user-select: none;
 }
 
 .dashboardPage__currentDate {

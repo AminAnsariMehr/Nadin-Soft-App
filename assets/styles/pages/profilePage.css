@@ -26,6 +26,7 @@
     font-size: 1.25rem;
     font-weight: 500;
     letter-spacing: 1px;
+    user-select: none;
 }
 
 .profilePage__UserSection {
@@ -43,6 +44,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1.5rem;
+    user-select: none;
 }
 
 .profilePage__userData {
@@ -59,6 +61,7 @@
 .profilePage__userGenderIcon {
     font-size: 2rem;
     color: var(--app-primary-color);
+    user-select: none;
 }
 
 .profilePage__renameWrapper {
@@ -130,6 +133,7 @@
     bottom: 40px;
     transition: 1s;
     cursor: pointer;
+    user-select: none;
 }
 
 .profilePage__avatarUrlInput {
