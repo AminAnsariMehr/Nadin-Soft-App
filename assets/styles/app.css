@@ -1,3 +1,86 @@
-@import url(./root/);
+@import url(./root/appRoot.css);
 @import url(./reset.css);
 @import url(./fonts.css);
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: var(--app-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: Poppins;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu {
+    width: 20%;
+    height: var(--frame-height-size);
+    padding: var(--frame-padding-size) 0.75rem;
+    background: var(--frame-bg);
+    border-top-right-radius: var(--frame-border-radius);
+    border-bottom-right-radius: var(--frame-border-radius);
+    box-shadow: var(--frame-shadow-color);
+}
+
+.menuItem {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.875rem;
+    user-select: none;
+    cursor: pointer;
+    transition: var(--default-transition);
+}
+
+.menuItem:hover {
+    background: var(--menuItem-hover-bg);
+}
+
+.menuItem__icon {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--app-secondary-color);
+}
+
+.menuItem__title {
+    color: var(--app-primary-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.dashboardPage,
+.todoPage,
+.weatherPage,
+.profilePage {
+    display: none;
+}
+
+.showPage {
+    display: flex;
+}
+
+.activePage {
+    background: var(--app-secondary-color);
+}
+
+.activePage .menuItem__icon {
+    color: var(--app-primary-color);
+}
