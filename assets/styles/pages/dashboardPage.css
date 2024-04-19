@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 1.5rem;
+    gap: 12px;
 }
 
 /*------------------ Digital Clock ------------------*/
@@ -37,8 +37,8 @@
 
 .analogClock {
     position: relative;
-    width: 450px;
-    min-height: 450px;
+    width: 420px;
+    aspect-ratio: 1;
     background-color: #031321;
     background: var(--clock-bg);
     border-radius: 50%;
@@ -64,7 +64,7 @@
 
 .clock__number {
     position: absolute;
-    inset: 20px;
+    inset: 12px;
     text-align: center;
     transform: rotate(calc(30deg * var(--i)));
 }
@@ -230,12 +230,10 @@
 
 .dashboardPage__currentDate,
 .dashboardPage__message {
-    font-size: 2.5rem;
-    color: rgba(255, 255, 255, 0.8);
-    color: #00ddff;
+    font-size: 30px;
     color: #4c4cdb;
 }
 
 .dashboardPage__currentDate {
-    font-size: 1.5rem;
+    font-size: 20px;
 }
