@@ -48,7 +48,6 @@
                             <div id="hourCircle" class="clock__circles clock__hourCircle">
                                 <i class="clock__Indicators clock__hourIndicator"></i>
                             </div>
-
                             <span class="clock__number" style="--i: 1"><b class="clock__number--bold">1</b></span>
                             <span class="clock__number" style="--i: 2"><b class="clock__number--bold">2</b></span>
                             <span class="clock__number" style="--i: 3"><b class="clock__number--bold">3</b></span>
@@ -77,9 +76,49 @@
             </div>
 
             <!-------------------------- ToDo Page -------------------------->
+            <div class="todoPage" id="todoPage">
+                <section class="todoApp">
+                    <header class="todoApp__header">My TODO</header>
 
+                    <div class="todoApp__innerContainer">
+                        <form class="todoApp__taskInputWrapper" id="addTaskForm">
+                            <input type="text" class="todoApp__taskInput" placeholder="Add a new task" />
+                            <button class="todoApp__taskSubmitIcon GlassMorphism__Button GlassMorphism__Button--Color1" id="addTaskBtn">
+                                <span class="GlassMorphism__LightSpan">Add task</span>
+                            </button>
+                        </form>
 
+                        <div class="todoApp__listsContainer">
+                            <section class="todoListWrapper" id="tasksWrapper">
+                                <header class="todoListWrapper__header">
+                                    <p class="todoListWrapper__title">Tasks to do</p>
+                                    <span>-</span>
+                                    <span class="todoListWrapper__tasksNumber" id="toDoTaskNumber">0</span>
+                                </header>
+                                <ul class="todoList" id="todoList"></ul>
+                            </section>
 
+                            <section class="doneListWrapper">
+                                <header class="doneListWrapper__header">
+                                    <p class="doneListWrapper__title">Done</p>
+                                    <span>-</span>
+                                    <span class="doneListWrapper__tasksNumber" id="doneTaskNumber">0</span>
+                                </header>
+                                <ul class="doneList" id="doneList"></ul>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!------------------------ Weather Page ------------------------>
+            <div class="weatherPage" id="weatherPage">
+
+            </div>
+
+            <!-------------------------- Profile Page -------------------------->
+            <div class="profilePage" id="profilePage">
+            </div>
 
 
 
