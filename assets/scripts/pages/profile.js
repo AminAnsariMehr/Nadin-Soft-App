@@ -28,14 +28,14 @@ window.addEventListener("load", () => {
 
 const activeCustomAvatar = () => {
     profileAvatarQuestion.style.left = "110%";
-    profileUrlLabel.style.bottom = "100%";
+    profileUrlLabel.style.bottom = "67px";
     urlCloseIcon.style.right = "15px";
-    avatarUrlInput.style.transform = "translate(0, -120%)";
+    avatarUrlInput.style.transform = "translate(0, -110%)";
 };
 
 const inactiveCustomAvatar = () => {
     profileAvatarQuestion.style.left = "0%";
-    profileUrlLabel.style.bottom = "35px";
+    profileUrlLabel.style.bottom = "40px";
     urlCloseIcon.style.right = "-20px";
     avatarUrlInput.style.transform = "translate(0, 0)";
 };

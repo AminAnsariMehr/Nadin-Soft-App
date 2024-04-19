@@ -73,8 +73,8 @@
 .profilePage__renameLabel,
 .profilePage__avatarLabel,
 .profilePage__themeTitle {
-    font-size: 2rem;
     color: var(--app-primary-color);
+    font-size: 1.25em;
     font-weight: 500;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .profilePage__avatarImageQuestion {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--app-primary-color);
     position: relative;
     transition: 0.8s;
@@ -127,7 +127,7 @@
     width: 70%;
     position: absolute;
     left: 0;
-    bottom: 35px;
+    bottom: 40px;
     transition: 1s;
     cursor: pointer;
 }
@@ -154,7 +154,7 @@
     color: var(--app-primary-color);
     font-size: 1.5rem;
     position: absolute;
-    bottom: 22px;
+    bottom: 18px;
     right: -20px;
     transition: 1s;
     cursor: pointer;
@@ -172,11 +172,11 @@
 .profilePage__userThemeBtnWrapper {
     position: relative;
     background: var(--toggle-button-bg);
-    padding: 6px 4px;
-    border-radius: 50px;
+    padding: 4px;
+    border-radius: 22px;
     display: flex;
     align-items: center;
-    gap: 1.33rem;
+    gap: 14px;
     cursor: pointer;
     transition: var(--default-transition);
 }
