@@ -52,6 +52,7 @@
 .loginPage__welcomeMessage {
     color: var(--app-primary-color);
     font-size: 2rem;
+    user-select: none;
 }
 
 .loginPage__welcomeMessage-small {
@@ -70,6 +71,7 @@
 .loginPage__loginPageFormTitles {
     font-size: 1.5rem;
     color: var(--app-primary-color);
+    user-select: none;
 }
 
 .loginPage__loginPageInputName {
@@ -105,6 +107,7 @@
 
 .loginPage__genderLabel {
     font-size: 1rem;
+    user-select: none;
 }
 
 .loginPage__userGenderRadio {
@@ -116,6 +119,7 @@
     border-radius: 50%;
     outline: 2px solid var(--app-primary-color);
     outline-offset: 2px;
+    cursor: pointer;
 }
 
 .loginPage__userGenderRadio:checked {
