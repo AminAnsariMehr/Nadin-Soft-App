@@ -12,6 +12,8 @@
 <body>
     <div class="container">
         <main class="main">
+
+            <!-------------------------- App Menu -------------------------->
             <ul class="menu" id="menu">
                 <li class="menuItem activePage" data-target-page="dashboardPage">
                     <i class="fa-solid fa-house menuItem__icon"></i>
@@ -30,6 +32,34 @@
                     <span class="menuItem__title"> Profile </span>
                 </li>
             </ul>
+
+            <!-------------------------- App Menu -------------------------->
+            <div class="dashboardPage showPage" id="dashboardPage">
+                <section class="dashboardApp">
+                    <section class="clocks">
+                        <!--------- Analog Clock --------->
+                        <div class="analogClock">
+
+                        </div>
+
+                        <!--------- Digital Clock --------->
+                        <div class="digitalClock">
+                            <div id="hours" class="digitalClock__parameter digitalClock__hours">00</div>
+                            <div id="minutes" class="digitalClock__parameter digitalClock__minutes">00</div>
+                            <div id="seconds" class="digitalClock__parameter digitalClock__seconds">00</div>
+                            <div id="am_pm" class="digitalClock__parameter digitalClock__AmPm">AM</div>
+                        </div>
+                    </section>
+                    <div class="dashboardPage__currentDate" id="currentTodayDisplay"></div>
+                    <div class="dashboardPage__message" id="dashboardUserMessage"></div>
+                </section>
+            </div>
+
+
+
+
+
+
         </main>
     </div>
 
