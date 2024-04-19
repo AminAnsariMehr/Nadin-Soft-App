@@ -1,0 +1,240 @@
+.profilePage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePage__settingsForm {
+    width: var(--frame-with-size);
+    height: var(--frame-height-size);
+    padding: var(--frame-padding-size);
+    background: var(--frame-bg);
+    border-radius: var(--frame-border-radius);
+    box-shadow: var(--frame-shadow-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profilePage__title {
+    width: 80%;
+    color: var(--app-primary-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.profilePage__UserSection {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.profilePage__userOptions {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.profilePage__userData {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profilePage__usernameDisplay,
+.profilePage__userGenderIcon {
+    font-size: 2rem;
+    color: var(--app-primary-color);
+}
+
+.profilePage__renameWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.profilePage__renameLabel,
+.profilePage__avatarLabel,
+.profilePage__themeTitle {
+    font-size: 2rem;
+    color: var(--app-primary-color);
+    font-weight: 500;
+}
+
+.profilePage__renameInput {
+    width: 100%;
+    color: gray;
+    background: transparent;
+    padding: 10px 1rem;
+    font-size: 1.25rem;
+    font-family: poppins;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.23);
+}
+
+.profilePage__renameInput::placeholder {
+    font-family: poppins;
+}
+
+.profilePage__userAvatarWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.profilePage__inputLogoWrapper {
+    position: relative;
+    width: 100%;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.profilePage__avatarImageQuestion {
+    font-size: 1.25rem;
+    color: var(--app-primary-color);
+    position: relative;
+    transition: 0.8s;
+    left: 0;
+}
+
+.profilePage__avatarUrlLabel {
+    color: var(--app-secondary-color);
+    width: 70%;
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.profilePage__avatarUrlInput {
+    width: 100%;
+    color: var(--profile-urlInput-color);
+    background: transparent;
+    padding: 10px 1rem;
+    font-size: 1.25rem;
+    font-family: poppins;
+    border-radius: 10px;
+    box-shadow:
+        inset 4px 4px 4px var(--profile-urlInput-shadow),
+        inset 4px -4px 4px var(--profile-urlInput-shadow),
+        inset -4px 4px 4px var(--profile-urlInput-shadow),
+        inset -4px -4px 4px var(--profile-urlInput-shadow);
+    position: absolute;
+    top: 100%;
+    transition: 1s;
+}
+
+.profilePage__avatarCloseIcon {
+    color: var(--app-primary-color);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 22px;
+    right: -20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.profilePage__themeWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.profilePage__userThemeBtnWrapper {
+    position: relative;
+    background: var(--toggle-button-bg);
+    padding: 6px 4px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1.33rem;
+    cursor: pointer;
+    transition: var(--default-transition);
+}
+
+.profilePage__userThemeBtnWrapper::before {
+    content: ' ';
+    width: 2.22rem;
+    height: 2.22rem;
+    background: var(--toggle-circle-bg);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transform: var(--toggle-circle-position);
+    transition: var(--default-transition);
+    z-index: 0;
+}
+
+.profilePage__userThemeSunIcon,
+.profilePage__userThemeMoonIcon {
+    width: 2.22rem;
+    height: 2.22rem;
+    font-size: 1.25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.profilePage__userThemeSunIcon {
+    color: var(--toggle-sun-color);
+}
+
+.profilePage__userThemeMoonIcon {
+    color: var(--toggle-moon-color);
+}
+
+.profilePage__avatarFrame {
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--savePassModal-border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePage__avatarImage {
+    width: 150px;
+    object-fit: cover;
+}
+
+.profilePage__saveSettingBtn {
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 30px;
+    transition: var(--default-transition);
+    cursor: pointer;
+}

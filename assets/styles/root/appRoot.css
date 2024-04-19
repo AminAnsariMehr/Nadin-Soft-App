@@ -22,4 +22,11 @@
     --weather-city-color: #3a3c8f;
     --weather-data-bg: #e9e7ff;
     --weather-Date-color: #8986ef;
+    --profile-urlInput-shadow: #00ddff3f;
+    --profile-urlInput-color: #808080;
+    --toggle-button-bg: #f5f5f6;
+    --toggle-circle-bg: #ffd371;
+    --toggle-sun-color: #997f44;
+    --toggle-moon-color: #b1b0b5;
+    --toggle-circle-position: translateX(4px);
 }
