@@ -1,0 +1,128 @@
+@import url(./../root/appRoot.css);
+@import url(./../../fontAwsomePackage/fontIcons/all.css);
+@import url(./../reset.css);
+@import url(./../fonts.css);
+@import url(./../components/buttons.css);
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: var(--app-bg);
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginPage {
+    position: relative;
+    width: var(--frame-with-size);
+    height: var(--frame-height-size);
+    padding: var(--frame-padding-size);
+    background: var(--frame-bg);
+    border-radius: var(--frame-border-radius);
+    box-shadow: var(--frame-shadow-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.loginPage__userDataForm,
+.loginPage__welcomeSlide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: 1s all ease-in-out;
+}
+
+.loginPage__userDataForm {
+    position: absolute;
+    padding: calc(var(--frame-padding-size) + 2rem);
+    top: 0;
+    left: -100%;
+    transition-delay: 0.1s;
+}
+
+.loginPage__welcomeMessage {
+    color: var(--app-primary-color);
+    font-size: 2rem;
+}
+
+.loginPage__welcomeMessage-small {
+    font-size: 1.2rem;
+}
+
+.loginPage__welcomeMessage span {
+    color: var(--app-secondary-color);
+}
+
+.loginPage__welcomeGoBtn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.loginPage__loginPageFormTitles {
+    font-size: 2rem;
+    color: var(--app-primary-color);
+}
+
+.loginPage__loginPageInputName {
+    width: 50%;
+    padding: 1rem 3rem;
+    background: transparent;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border-radius: 1rem;
+    box-shadow: var(--frame-shadow-color);
+    margin-bottom: 4rem;
+}
+
+.loginPage__loginPageInputName::placeholder {
+    color: #0000003b;
+    font-size: 1.5rem;
+}
+
+.loginPage__genderWrapper {
+    width: 50%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.loginPage__radioWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.loginPage__genderLabel {
+    font-size: 1.25rem;
+}
+
+.loginPage__userGenderRadio {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    inset: 10px;
+    background: transparent;
+    border-radius: 50%;
+    background: transparent;
+    outline: 2px solid var(--app-primary-color);
+    outline-offset: 2px;
+}
+
+.loginPage__userGenderRadio:checked {
+    background: var(--app-secondary-color);
+}
+
+.loginPage__userDataSubmitBtn {
+    cursor: pointer;
+}

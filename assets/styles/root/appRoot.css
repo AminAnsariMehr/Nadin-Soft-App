@@ -1,0 +1,9 @@
+/* ------------------  General ------------------- */
+:root {
+    --frame-with-size: 80%;
+    --frame-height-size: 85%;
+    --frame-shadow-color: 0px 4px 4px rgba(0, 0, 0, 0.23);
+    --frame-padding-size: 3rem;
+    --frame-border-radius: 2.5rem;
+    --default-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}

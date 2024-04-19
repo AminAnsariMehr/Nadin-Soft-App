@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nadin Soft</title>
+    <link rel="icon" type="image/x-icon" href="./assets/decorations/logo.png">
+    <link rel="stylesheet" href="./assets/styles/pages/loginPage.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="loginPage">
+            <section class="loginPage__welcomeSlide" id="welcomeSlide">
+                <span class="loginPage__welcomeMessage">Hello!</span>
+                <span class="loginPage__welcomeMessage">Welcome to NadinSoft <span>app</span></span>
+                <span class=" loginPage__welcomeMessage loginPage__welcomeMessage-small">are you ready?</span>
+
+                <button class="loginPage__welcomeGoBtn GlassMorphism__Button GlassMorphism__Button--Color2" id="welcomeGoBtn">
+                    <span class="GlassMorphism__LightSpan">Yes</span>
+                </button>
+            </section>
+
+            <form class="loginPage__userDataForm" id="userDataForm">
+                <label for="loginUserNameInput" class="loginPage__loginPageFormTitles">Please Enter Your Name</label>
+                <input type="text" class="loginPage__loginPageInputName" id="loginUserNameInput" placeholder="Your name..." autocomplete="off">
+
+                <label class="loginPage__loginPageFormTitles">Please select your gender</label>
+                <div class="loginPage__genderWrapper">
+
+                    <div class="loginPage__radioWrapper">
+                        <label for="maleUser" class="loginPage__genderLabel">male</label>
+                        <input type="radio" name="userGender" checked class="loginPage__userGenderRadio" id="maleUser" value="male">
+                    </div>
+
+                    <div class="loginPage__radioWrapper">
+                        <label for="femaleUser" class="loginPage__genderLabel">female</label>
+                        <input type="radio" name="userGender" class="loginPage__userGenderRadio" id="femaleUser" value="female">
+                    </div>
+
+                </div>
+                <button class="loginPage__userDataSubmitBtn GlassMorphism__Button GlassMorphism__Button--Color1" id="userDataSubmitBtn">
+                    <span class="GlassMorphism__LightSpan">Submit</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="./assets/scripts/pages/loginPage.js"></script>
+</body>
+
+</html>
