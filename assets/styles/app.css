@@ -1,7 +1,12 @@
-@import url(./root/appRoot.css);
+@import url(./../styles/root/appRoot.css);
+@import url(./../fontAwsomePackage/fontIcons/all.css);
 @import url(./reset.css);
 @import url(./fonts.css);
-
+@import url(./pages/dashboardPage.css);
+@import url(./pages/todoPage.css);
+@import url(./pages/weatherPage.css);
+@import url(./pages/profilePage.css);
+@import url(./components/buttons.css);
 
 .container {
     width: 100%;
