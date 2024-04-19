@@ -10,13 +10,14 @@
 
 .container {
     width: 100%;
+    max-width: 1536px;
     height: 100vh;
     background: var(--app-bg);
+    font-family: Poppins;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    font-family: Poppins;
 }
 
 .main {
