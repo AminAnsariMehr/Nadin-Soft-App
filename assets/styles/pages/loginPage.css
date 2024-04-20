@@ -52,6 +52,7 @@
 .loginPage__welcomeMessage {
     color: var(--app-primary-color);
     font-size: 2rem;
+    text-align: center;
     user-select: none;
 }
 

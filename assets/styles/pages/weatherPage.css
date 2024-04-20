@@ -36,6 +36,7 @@
     top: 50%;
     left: 0;
     transform: translate(1rem, -50%);
+    background: peru;
 }
 
 .weatherApp__searchCityInput {
