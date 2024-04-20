@@ -209,8 +209,133 @@
         font-size: 1.5rem;
     }
 
+    .profilePage__renameLabel,
+    .profilePage__avatarLabel,
+    .profilePage__themeTitle {
+        font-size: 1rem;
+    }
+}
 
 
+
+
+
+
+
+@media (min-width:640px) and (max-width: 768px) {
+
+    .loginPage__loginPageFormTitles {
+        font-size: 1.25rem;
+    }
+
+    .loginPage__loginPageInputName {
+        width: 80%;
+    }
+
+    .menu {
+        width: 25%;
+    }
+
+    .dashboardPage,
+    .todoPage,
+    .weatherPage,
+    .profilePage {
+        width: 75%;
+    }
+
+    .dashboardApp,
+    .todoApp,
+    .weatherApp,
+    .profilePage__settingsForm {
+        width: 100%;
+        padding: 1rem;
+        overflow: scroll;
+    }
+
+    .todoApp__header,
+    .todoApp__innerContainer {
+        width: 100%;
+    }
+
+    .todoApp__taskInput {
+        padding: 10px 16px;
+    }
+
+    .todoApp__taskInput::placeholder {
+        font-size: 1rem;
+    }
+
+    .todoList__todoItems,
+    .doneList__doneItems {
+        height: auto;
+        padding: 1rem 6px;
+        letter-spacing: 0px;
+        border-radius: 6px;
+    }
+
+    .weatherApp__searchBoxWrapper {
+        width: 95%;
+    }
+
+    .weatherApp__searchCityInput {
+        padding: 10px 50px;
+    }
+
+    .weatherApp__searchCityInput::placeholder {
+        font-size: 1rem;
+    }
+
+    .weatherApp__cityName,
+    .weatherApp__locationIcon {
+        font-size: 2rem;
+    }
+
+    .weatherApp__weatherData {
+        width: 90%;
+    }
+
+    .weatherApp__windDirectionNumber,
+    .weatherApp__windDirectionUnit,
+    .weatherApp__dailyStatus,
+    .weatherApp__windSpeedNumber,
+    .weatherApp__windSpeedUnit {
+        font-size: 1rem;
+    }
+
+    .profilePage__title {
+        display: none;
+    }
+
+    .profilePage__UserSection {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .profilePage__userOptions,
+    .profilePage__userData {
+        width: 100%;
+    }
+
+    .profilePage__userOptions {
+        padding: 0 2rem;
+    }
+
+    .profilePage__userData {
+        flex-direction: row;
+    }
+
+    .profilePage__avatarFrame {
+        width: 130px;
+    }
+
+    .profilePage__avatarImage {
+        width: 120px;
+    }
+
+    .profilePage__usernameDisplay,
+    .profilePage__userGenderIcon {
+        font-size: 1.5rem;
+    }
 
     .profilePage__renameLabel,
     .profilePage__avatarLabel,
@@ -218,74 +343,230 @@
         font-size: 1rem;
     }
 
+}
 
+
+@media (max-width: 640px) {
+    .loginPage {
+        padding: 3rem 0;
+    }
+
+    .loginPage__welcomeSlide {
+        gap: 1.5rem;
+    }
+
+    .loginPage__welcomeMessage {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+
+    .loginPage__welcomeMessage-small {
+        font-size: 18px;
+    }
+
+    .loginPage__welcomeGoBtn {
+        margin-top: 0;
+    }
+
+    .loginPage__userDataForm {
+        padding: 0;
+    }
+
+    .loginPage__loginPageInputName {
+        width: 80%;
+        margin-bottom: 0;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        border-radius: 6px;
+    }
+
+    .loginPage__loginPageInputName::placeholder {
+        font-size: 1rem;
+    }
+
+    .loginPage__loginPageFormTitles {
+        font-size: 18px;
+    }
+
+    .loginPage__genderWrapper {
+        width: 60%;
+        margin-bottom: 0;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .loginPage__radioWrapper {
+        padding: 5px;
+        gap: 6px;
+    }
+
+    .menu {
+        padding: 1.75rem 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .menuItem {
+        padding: 0;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuItem__title {
+        display: none;
+    }
+
+    .dashboardApp,
+    .todoApp,
+    .weatherApp,
+    .profilePage__settingsForm {
+        width: 95%;
+        padding: 1.5rem 0;
+        justify-content: center;
+    }
+
+    .digitalClock {
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .dashboardPage__currentDate {
+        font-size: 16px;
+    }
+
+    .dashboardPage__message {
+        font-size: 20px;
+    }
+
+    .analogClock {
+        display: none;
+    }
+
+    .todoApp__header {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    .todoApp__innerContainer {
+        width: 95%;
+        gap: 10px;
+    }
+
+    .todoApp__taskInputWrapper {
+        position: relative;
+        gap: 0.5rem;
+    }
+
+    .todoApp__taskInput {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+
+    .todoApp__taskInput::placeholder {
+        font-size: 14px;
+    }
+
+    .todoApp__taskSubmitIcon {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: var(--app-primary-color);
+        border-radius: 4px;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+    }
+
+    .todoApp__taskSubmitIcon::after,
+    .todoApp__taskSubmitIcon::before,
+    .GlassMorphism__LightSpan {
+        display: none;
+    }
+
+    .todoApp__listsContainer {
+        flex-direction: column;
+    }
+
+    .todoListWrapper,
+    .doneListWrapper {
+        width: 100%;
+        padding: 0 5px;
+        height: calc(calc(100% - 1rem) / 2);
+        border-radius: 10px;
+        box-shadow: var(--frame-shadow-color);
+    }
+
+    .todoList,
+    .doneList {
+        gap: 10px;
+    }
+
+    .todoList__todoItems,
+    .doneList__doneItems {
+        height: auto;
+        padding: 1rem 6px;
+        letter-spacing: 0px;
+        border-radius: 6px;
+    }
 
 }
 
 
+@media (max-width: 400px) {
 
 
 
-
-
-@media only screen and (max-width: 600px) {
-
-
-
-
-
-    .loginPage__welcomeMessage {
-        /* font-size: ; */
+    .menuItem {
+        padding: 0;
     }
 
-    .loginPage__welcomeMessage-small {
-        /* font-size: ; */
+    .menuItem__icon {
+        font-size: 1rem;
     }
 
-    .loginPage__welcomeMessage span {
-        /* font-size: ; */
+    .analogClock {
+        display: none;
     }
 
-}
-
-
-@media only screen and (max-width: 600px) {
-
-
-
-
-
-    .loginPage__welcomeMessage {
-        /* font-size: ; */
+    .digitalClock {
+        flex-direction: column;
     }
 
-    .loginPage__welcomeMessage-small {
-        /* font-size: ; */
+
+
+    .todoListWrapper__header,
+    .doneListWrapper__header {
+        font-size: 14px;
     }
 
-    .loginPage__welcomeMessage span {
-        /* font-size: ; */
+    .todoList__todoItems,
+    .doneList__doneItems {
+        gap: 10px;
     }
 
-}
-
-
-@media only screen and (max-width: 600px) {
-
-
-
-
-
-    .loginPage__welcomeMessage {
-        /* font-size: ; */
+    .todoList__todoTask,
+    .doneList__doneTask {
+        font-size: 14px;
     }
 
-    .loginPage__welcomeMessage-small {
-        /* font-size: ; */
+    .todoList__todoCheckIcon,
+    .todoList__todoEditIcon,
+    .todoList__todoDeleteIcon,
+    .taskInputWrapper__btn,
+    .doneList__restoreIcon,
+    .doneList__deleteIcon {
+        font-size: 12px;
     }
 
-    .loginPage__welcomeMessage span {
-        /* font-size: ; */
-    }
+
+
+
 
 }

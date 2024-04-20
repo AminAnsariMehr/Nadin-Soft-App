@@ -45,7 +45,7 @@
     position: absolute;
     padding: calc(var(--frame-padding-size) + 2rem);
     top: 0;
-    left: -100%;
+    left: -120%;
     transition-delay: 0.1s;
 }
 
@@ -70,8 +70,9 @@
 }
 
 .loginPage__loginPageFormTitles {
-    font-size: 1.5rem;
     color: var(--app-primary-color);
+    font-size: 1.5rem;
+    text-align: center;
     user-select: none;
 }
 

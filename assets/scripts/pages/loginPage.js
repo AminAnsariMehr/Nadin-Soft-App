@@ -7,8 +7,8 @@ const userData = {};
 
 // switch welcome slide
 welcomeGoBtn.addEventListener("click", () => {
-    welcomeSlide.style.transform = "translate(100%)";
-    userDataForm.style.transform = "translate(100%)";
+    welcomeSlide.style.transform = "translate(200%)";
+    userDataForm.style.transform = "translate(120%)";
 })
 
 // submit user data Login

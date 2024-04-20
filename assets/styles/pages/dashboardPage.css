@@ -233,6 +233,7 @@
 .dashboardPage__message {
     color: #4c4cdb;
     font-size: 30px;
+    text-align: center;
     user-select: none;
 }
 
