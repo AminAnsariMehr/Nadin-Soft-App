@@ -36,7 +36,6 @@
     top: 50%;
     left: 0;
     transform: translate(1rem, -50%);
-    background: peru;
 }
 
 .weatherApp__searchCityInput {
@@ -62,8 +61,6 @@
 }
 
 .weatherApp__dateData {
-    width: 208px;
-    height: 30px;
     color: var(--weather-Date-color);
     display: flex;
     justify-content: center;
@@ -112,7 +109,7 @@
 
 .weatherApp__tempStatusImage {
     width: 128px;
-    height: 128px;
+    aspect-ratio: 1;
     position: absolute;
     right: 0;
     bottom: 0;

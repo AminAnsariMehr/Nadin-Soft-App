@@ -516,6 +516,110 @@
         border-radius: 6px;
     }
 
+
+    .weatherApp__searchBoxWrapper {
+        position: relative;
+        gap: 0.5rem;
+    }
+
+    .weatherApp__searchIcon {
+        font-size: 16px;
+        font-weight: 500;
+        transform: translate(5px, -50%);
+    }
+
+    .weatherApp__searchCityInput {
+        width: 100%;
+        padding: 10px 26px;
+        font-size: 16px;
+        border-radius: 6px;
+        background: yellow;
+    }
+
+    .weatherApp__searchCityInput::placeholder {
+        font-size: 14px;
+    }
+
+    .weatherApp__searchCityBtn {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: var(--app-primary-color);
+        border-radius: 4px;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+    }
+
+    .weatherApp__searchCityBtn::after,
+    .weatherApp__searchCityBtn::before {
+        display: none;
+    }
+
+    .weatherApp__locationData {
+        gap: 0.3rem;
+    }
+
+    .weatherApp__cityName,
+    .weatherApp__locationIcon {
+        font-size: 24px;
+    }
+
+    .weatherApp__dateData {
+        font-size: 12px;
+    }
+
+    .weatherApp__statusIndicator {
+        width: 200px;
+        height: 100px;
+    }
+
+    .weatherApp__currentTempNumber {
+        font-size: 5rem;
+    }
+
+    .weatherApp__currentTempNumber::after {
+        width: 20px;
+        border: 4px solid var(--app-primary-color);
+        left: 90%;
+    }
+
+    .weatherApp__tempStatusImage {
+        width: 80px;
+        transform: translate(-10px, 12px);
+    }
+
+    .weatherApp__weatherData {
+        width: 95%;
+        border-radius: 20px;
+    }
+
+    .weatherApp__windDirectionData {}
+
+    .weatherApp__dailyIcon,
+    .weatherApp__windSpeedIcon,
+    .weatherApp__windDirectionIcon {
+        font-size: 1.5rem;
+    }
+
+    .weatherApp__windDirectionNumber,
+    .weatherApp__windDirectionUnit,
+    .weatherApp__dailyStatus,
+    .weatherApp__windSpeedNumber,
+    .weatherApp__windSpeedUnit {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .weatherApp__windDirectionTitle,
+    .weatherApp__dailyTitle,
+    .weatherApp__windSpeedTitle {
+        font-size: 12px;
+    }
+
+
+
+
 }
 
 
