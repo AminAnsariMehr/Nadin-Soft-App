@@ -95,7 +95,7 @@
 
 
 /* ------------------------    tablet    --------------------------- */
-@media (min-width: 768px)and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .loginPage__loginPageFormTitles {
         font-size: 1.25rem;
     }
@@ -222,7 +222,7 @@
 
 
 
-@media (min-width:640px) and (max-width: 768px) {
+@media (max-width: 768px) {
 
     .loginPage__loginPageFormTitles {
         font-size: 1.25rem;
@@ -619,6 +619,37 @@
 
 
 
+    /* .profilePage__userAvatarWrapper {
+        gap: 10px;
+    } */
+
+    .profilePage__avatarImageQuestion {
+        line-height: 20px;
+    }
+
+    .profilePage__avatarUrlLabel {
+        width: 100%;
+        font-size: 16px;
+        bottom: 20px;
+        /* background: red; */
+    }
+
+    .profilePage__saveSettingBtn {
+        display: flex;
+    }
+
+    .profilePage__saveSettingBtn::before,
+    .profilePage__saveSettingBtn::after {
+        display: flex;
+    }
+
+    .GlassMorphism__LightSpan--saveSetting {
+        display: flex;
+    }
+
+
+
+
 
 }
 
@@ -670,7 +701,13 @@
     }
 
 
+    .profilePage__renameInput {
+        padding: 6px 1rem;
+        font-size: 14px;
+        border-radius: 6px;
+    }
 
-
-
+    .profilePage__userOptions {
+        padding: 0 1rem;
+    }
 }
