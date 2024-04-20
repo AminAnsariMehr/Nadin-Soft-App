@@ -218,10 +218,6 @@
 
 
 
-
-
-
-
 @media (max-width: 768px) {
 
     .loginPage__loginPageFormTitles {
@@ -516,7 +512,6 @@
         border-radius: 6px;
     }
 
-
     .weatherApp__searchBoxWrapper {
         position: relative;
         gap: 0.5rem;
@@ -533,7 +528,6 @@
         padding: 10px 26px;
         font-size: 16px;
         border-radius: 6px;
-        background: yellow;
     }
 
     .weatherApp__searchCityInput::placeholder {
@@ -594,8 +588,6 @@
         border-radius: 20px;
     }
 
-    .weatherApp__windDirectionData {}
-
     .weatherApp__dailyIcon,
     .weatherApp__windSpeedIcon,
     .weatherApp__windDirectionIcon {
@@ -618,11 +610,6 @@
     }
 
 
-
-    /* .profilePage__userAvatarWrapper {
-        gap: 10px;
-    } */
-
     .profilePage__avatarImageQuestion {
         line-height: 20px;
     }
@@ -631,7 +618,6 @@
         width: 100%;
         font-size: 16px;
         bottom: 20px;
-        /* background: red; */
     }
 
     .profilePage__saveSettingBtn {
@@ -655,8 +641,17 @@
 
 
 @media (max-width: 400px) {
+    .menu {
+        width: 12%;
+    }
 
-
+    .dashboardPage,
+    .todoPage,
+    .weatherPage,
+    .profilePage {
+        width: 85%;
+        justify-content: center;
+    }
 
     .menuItem {
         padding: 0;
@@ -673,8 +668,6 @@
     .digitalClock {
         flex-direction: column;
     }
-
-
 
     .todoListWrapper__header,
     .doneListWrapper__header {
@@ -700,7 +693,6 @@
         font-size: 12px;
     }
 
-
     .profilePage__renameInput {
         padding: 6px 1rem;
         font-size: 14px;
@@ -710,4 +702,45 @@
     .profilePage__userOptions {
         padding: 0 1rem;
     }
+
+    .profilePage__avatarImageQuestion {
+        font-size: 11px;
+        line-height: 11px;
+    }
+
+    .profilePage__avatarUrlLabel {
+        font-size: 12px;
+
+    }
+
+    .profilePage__avatarUrlInput {
+        padding: 8px 1rem;
+        font-size: 14px;
+    }
+
+    .profilePage__avatarCloseIcon {
+        font-size: 16px;
+        right: 10px;
+        bottom: 14px;
+    }
+
+    .profilePage__avatarFrame {
+        width: 100px;
+    }
+
+    .profilePage__avatarImage {
+        width: 80px;
+    }
+
+    .profilePage__saveSettingBtn {
+        width: 100px;
+        height: 40px;
+        border-radius: 6px;
+    }
+
+    .GlassMorphism__LightSpan--saveSetting {
+        font-size: 14px;
+        border-radius: 6px;
+    }
+
 }
