@@ -10,6 +10,7 @@
     width: var(--frame-with-size);
     height: var(--frame-height-size);
     padding: var(--frame-padding-size);
+    padding-bottom: 10px;
     background: var(--frame-bg);
     border-radius: var(--frame-border-radius);
     box-shadow: var(--frame-shadow-color);
