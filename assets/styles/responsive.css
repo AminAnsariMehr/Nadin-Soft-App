@@ -598,7 +598,6 @@
     .profilePage__avatarUrlLabel {
         width: 100%;
         font-size: 16px;
-        bottom: 20px;
     }
 
     .profilePage__saveSettingBtn {
@@ -680,8 +679,7 @@
     }
 
     .profilePage__avatarImageQuestion {
-        font-size: 11px;
-        line-height: 11px;
+        font-size: 14px;
     }
 
     .profilePage__avatarUrlLabel {
@@ -696,8 +694,6 @@
 
     .profilePage__avatarCloseIcon {
         font-size: 16px;
-        right: 10px;
-        bottom: 14px;
     }
 
     .profilePage__avatarFrame {
