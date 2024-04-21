@@ -49,11 +49,6 @@
         font-size: 1.25rem;
     }
 
-    .todoList,
-    .doneList {
-        max-height: 450px;
-    }
-
     .todoList__todoCheckIcon,
     .todoList__todoEditIcon,
     .todoList__todoDeleteIcon,
@@ -90,7 +85,7 @@
 
 }
 
-@media (min-width: 1024px)and (max-width: 1536px) {}
+/* @media (min-width: 1024px)and (max-width: 1536px) {} */
 
 
 
@@ -357,7 +352,7 @@
     }
 
     .loginPage__welcomeMessage-small {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .loginPage__welcomeGoBtn {
@@ -381,7 +376,7 @@
     }
 
     .loginPage__loginPageFormTitles {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .loginPage__genderWrapper {
@@ -632,11 +627,6 @@
     .GlassMorphism__LightSpan--saveSetting {
         display: flex;
     }
-
-
-
-
-
 }
 
 
@@ -742,5 +732,4 @@
         font-size: 14px;
         border-radius: 6px;
     }
-
 }
